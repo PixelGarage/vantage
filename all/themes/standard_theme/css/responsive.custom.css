@@ -1,0 +1,131 @@
+/*
+ * responsive.custom.css is for custom media queries that are not set via the
+ * theme settings, such as cascading media queries.
+ *
+ * By default all the other responsive stylesheets used in Adaptivetheme use a
+ * "stacking method", however cascading media queries use a waterfall method so
+ * you can leverage the cascade and inheritance for all browsers that support
+ * media queries, regardless of screen size.
+ *
+ * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
+ *
+ * NOTE: this file loads by default, to disable got to your theme settings and
+ * look under the "CSS" settings tab.
+ */
+@media only screen and (min-width: 40em) { /* >= 640 px*/
+    /* ==================================================================================
+     *  Header adaptation
+     * ================================================================================== */
+    #block-locale-language {
+        right: 50px;
+    }
+    /* ==================================================================================
+     *  School Icons
+     * ================================================================================== */
+    .front .view-schools .views-row {
+        margin: 0 2.7%;
+        width: 14%;
+    }
+    /* ==================================================================================
+     *   Banner page styling
+     * ================================================================================== */
+    .node-banner.node-full .field-name-field-logos {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 100%;
+    }
+    .node-banner.node-full .field-name-field-logos .field-item {
+        display: inline-block;
+        margin: 0 10px;
+        width: 10%;
+        vertical-align: middle;
+    }
+    .flex-control-nav {
+        bottom: 20px;
+    }
+    /* ==================================================================================
+     *   Vision page styling
+     * ================================================================================== */
+    #content .node-vision.node-full > .at-panel > .region > .region-inner {
+        padding: 0 100px;
+    }
+    .node-vision.node-full .field-name-mission .field-name-body p {
+        margin: 0 -80px;
+    }
+}
+
+@media only screen and (min-width: 48em) { /* >= 768 px*/
+    /* ==================================================================================
+     *   List page styling
+     * ================================================================================== */
+    .node-schools.node-full > .at-panel > .region > .region-inner {
+        margin-left: 25px;
+    }
+    /* ==================================================================================
+     *   Organisation page styling
+     * ================================================================================== */
+    .node-organisation.node-full .node-team.node-teaser > .at-panel > .region > .region-inner {
+        height: 240px;
+    }
+}
+
+@media only screen and (min-width: 60em) { /* >= 960 px*/
+    /* ==================================================================================
+     *  Page sizing
+     * ================================================================================== */
+    #page .page-inner {
+        margin: 0 65px;
+    }
+    #header {
+        margin: 0 0 0 -65px;
+    }
+    #header .header-inner {
+        margin: 0 65px;
+    }
+    /* ==================================================================================
+     *  Header adaptation
+     * ================================================================================== */
+    #block-locale-language {
+        right: 115px;
+    }
+}
+
+@media only screen and (min-width: 64em) { /* >= 1024 px*/
+    /* ==================================================================================
+     *  Header adaptation
+     * ================================================================================== */
+    #header .region-header .region-inner {
+        margin: 0 50px;
+        text-align: left;
+    }
+    #logo {
+        width: 225px;
+    }
+    #block-locale-language {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        right: 0;
+        padding: 0;
+    }
+
+}
+
+@media only screen and (min-width: 80em) { /* >= 1280 px*/
+    /* ==================================================================================
+     *  Page sizing
+     * ================================================================================== */
+    #page .page-inner {
+        margin: 0 145px;
+        max-width: 1150px;
+    }
+    #header {
+        margin: 0 0 0 -145px;
+    }
+    #header .header-inner {
+        margin: 0 145px;
+        max-width: 1150px;
+    }
+}
+
