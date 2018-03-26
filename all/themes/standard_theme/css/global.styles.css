@@ -319,7 +319,7 @@ a:focus {
     display: block;
     padding: 0;
     margin: 0 auto;
-    width: 150px;
+    width: 250px;
 }
 
 #logo img {
@@ -1879,12 +1879,12 @@ ul.secondary li a.active {
     letter-spacing: 0.03em;
 }
 .node-organisation.node-full .node-team.node-teaser .field-name-body {
-    margin: 13px 0 0;
+    margin: 10px 0 0;
 }
 .node-organisation.node-full .node-team.node-teaser .field-name-body p {
     margin: 0 0 15px;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 16px !important;
 }
 
 
